@@ -21,7 +21,7 @@ class InputFeatures(BaseModel):
 # Function to preprocess the input data
 def preprocess_features(input_features: InputFeatures):
     dict_f = {
-        #'rating': input_features.rating,
+        'rating': input_features.rating,
         'provider': input_features.provider,
         'level': input_features.level,
         #'reviews': input_features.reviews,
