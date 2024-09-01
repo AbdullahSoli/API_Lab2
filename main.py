@@ -10,10 +10,10 @@ scaler_kmeans = joblib.load('kmens_scaler.joblib')
 
 # Define the data model for the input
 class InputFeatures(BaseModel):
-    rating : float
+    #rating : float
     provider: int
     level: int
-    reviews: int
+    #reviews: int
     course_type: int
     duration_weeks: int
 
@@ -21,10 +21,10 @@ class InputFeatures(BaseModel):
 # Function to preprocess the input data
 def preprocess_features(input_features: InputFeatures):
     dict_f = {
-        'rating': input_features.rating,
+        #'rating': input_features.rating,
         'provider': input_features.provider,
         'level': input_features.level,
-        'reviews': input_features.reviews,
+        #'reviews': input_features.reviews,
         'course_type': input_features.course_type,
         'duration_weeks': input_features.duration_weeks
     }
