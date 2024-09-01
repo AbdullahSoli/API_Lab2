@@ -10,7 +10,7 @@ scaler_kmeans = joblib.load('kmens_scaler.joblib')
 
 # Define the data model for the input
 class InputFeatures(BaseModel):
-    #rating : float
+    rating : float
     provider: int
     level: int
     #reviews: int
